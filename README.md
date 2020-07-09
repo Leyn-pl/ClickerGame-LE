@@ -5,4 +5,6 @@ Nice)
 # Discord
 Me: [LBC] <LEYN>#1092
 
-Server (RU):https://discord.gg/ftGX4rX
+Server: https://discord.gg/ftGX4rX(RU
+
+Game Server: 
