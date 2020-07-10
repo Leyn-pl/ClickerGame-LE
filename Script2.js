@@ -165,7 +165,8 @@ function miner(){
 setInterval(stoneTime,1000) 
 function stoneTime() {
        if (minerInt2 > 0){
-              stoneInt2 += minerInt2
+              stoneInt2 = stoneInt + minerInt2
+		stoneInt = stoneInt2
        }
           document.getElementById("stone").innerHTML = "" + stoneInt2 + "" ;
 }
@@ -188,7 +189,8 @@ function woodcutter(){
 setInterval(woodTime,1000) 
 function woodTime() {
        if (woodcutterInt2 > 0){
-              woodInt2 += woodcutterInt2
+              woodInt2 = woodInt + woodcutterInt2
+	       woodInt = woodInt2
        }
           document.getElementById("wood").innerHTML = "" + woodInt2 + "" ;
 }
@@ -211,7 +213,8 @@ function farmer(){
 setInterval(foodTime,1000) 
 function foodTime() {
        if (farmerInt2 > 0){
-              foodInt2 += farmerInt2
+              foodInt2 = foodInt + farmerInt2
+	       foodInt = foodInt2
        }
           document.getElementById("food").innerHTML = "" + foodInt2 + "" ;
 }
