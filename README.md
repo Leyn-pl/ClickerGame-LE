@@ -7,4 +7,4 @@ Me: [LBC] <LEYN>#1092
 
 Server: https://discord.gg/ftGX4rX(RU
 
-Game Server: 
+Game Server: https://discord.gg/pnBSeS2
