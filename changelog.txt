@@ -1,0 +1,4 @@
+===== version 1.2 =====
+ - added info button
+ - removed pause
+ - added GitHub
