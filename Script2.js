@@ -1,5 +1,5 @@
 //starting alert
-alert("Clicker Game L.E. 1.1: \n -Removed pause \n -Added info (also pause)")
+alert("Clicker Game L.E. 1.1: \n -Removed pause \n -Added info \n -Added GitHub")
 //resourses
 var stoneInt2 = 0
 var stoneInt = 0
@@ -46,7 +46,7 @@ function food() {
 }
 //info
 function info() {
-  alert("About Game: \n This is Clicker Game L.E. \n This is Game created only with JS, HTML and CSS languages! \n -- \nCreator: \n FFirtes \n -- \nEditor: \n LEYN \n -- \nGame Discord: https://discord.gg/DcetVsa \nMy Discord: https://discord.gg/ftGX4rX \n -- \n (Game paused)");
+  alert("About Game: \n This is Clicker Game L.E. \n This is Game created only with JS, HTML and CSS languages! \n -- \nCreator: \n FFirtes \n -- \nEditor: \n LEYN \n -- \nGame Discord: https://discord.gg/DcetVsa \nMy Discord: https://discord.gg/ftGX4rX \nGitHub: https://github.com/Leyn-pl/ClickerGameL.E./compare/master...Leys-pl:patch-2\n -- \n (Game paused)");
 }
 //shop
 function SellStone() {
