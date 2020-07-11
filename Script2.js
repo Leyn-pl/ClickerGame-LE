@@ -1,5 +1,5 @@
 //starting alert
-alert("Clicker Game L.E. 1.1: \n -Removed pause \n -Added info \n -Added GitHub")
+alert("Clicker Game L.E. 1.1: \n -Fixed bug with automining")
 //resourses
 var stoneInt2 = 0
 var stoneInt = 0
