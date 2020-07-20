@@ -10,7 +10,7 @@ Me: [LBC] <LEYN>#1092
 Developer: FFirtes#0250
 # Links
 
-[My Discord](https://discord.gg/ftGX4rX) (RU)
+[My Discord](https://discord.gg/ftGX4rX)
 
 [Game Discord](https://discord.gg/pnBSeS2)
 
