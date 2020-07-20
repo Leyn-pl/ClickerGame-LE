@@ -14,4 +14,4 @@ Developer: FFirtes#0250
 
 [Game Discord](https://discord.gg/pnBSeS2)
 
-[Original game GitHub](https://github.com/FFirtes/ClickerGame)
+[Game GitHub](https://github.com/FFirtes/ClickerGame)
