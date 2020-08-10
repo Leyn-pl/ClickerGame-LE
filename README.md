@@ -4,7 +4,7 @@ I edited Clicker Game by FFirtes
 For play, open "Index.html" file.
 You can use "Icon.ico" to make icon for tag
 
-I will update code then i get stabile 6.0
+__I will update code then i get stabile 6.0__
 
 # Discord
 Me: _LEYN ~ Rias#1092
