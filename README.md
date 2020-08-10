@@ -5,7 +5,7 @@ For play, open "Index.html" file.
 You can use "Icon.ico" to make icon for tag
 
 # Discord
-Me: [LBC] <LEYN>#1092
+Me: _LEYN ~ Rias#1092
 
 Developer: FFirtes#0250
 # Links
