@@ -46,7 +46,7 @@ function food() {
 }
 //info
 function info() {
-  alert("About Game: \n This is Clicker Game L.E. \n This is Game created only with JS, HTML and CSS languages! \n -- \nDeveloper: FFirtes  \nProgrammer: TheSlaylord \nEdited by LEYN \n -- \nGame Discord: https://discord.gg/DcetVsa \nMy Discord: https://discord.gg/ftGX4rX \n -- \n (Game paused)");
+  alert("About Game: \n This is Clicker Game L.E. \n This is Game created only with JS, HTML and CSS languages! \n -- \nDeveloper: FFirtes  \nProgrammers: TheSlaylord, i_xz_cto_i \nEdited by LEYN \n -- \nGame Discord: https://discord.gg/DcetVsa \nMy Discord: https://discord.gg/ftGX4rX \n -- \n (Game paused)");
 }
 //shop
 function SellStone() {
