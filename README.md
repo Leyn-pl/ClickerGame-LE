@@ -10,8 +10,8 @@ Me: _LEYN ~ Rias#1092
 Developer: FFirtes#0250
 # Links
 
-[My Discord](https://discord.gg/ftGX4rX)
+[Join My Discord](https://discord.gg/ftGX4rX)
 
-[Game Discord](https://discord.gg/pnBSeS2)
+[Join Game Discord](https://discord.gg/pnBSeS2)
 
 [Game GitHub](https://github.com/FFirtes/ClickerGame)
