@@ -16,4 +16,4 @@ Developer: FFirtes#0250
 
 [Join Game Discord](https://discord.gg/pnBSeS2)
 
-[Game GitHub](https://github.com/FFirtes/ClickerGame)
+[Medieval Clicker Game](https://github.com/FFirtes/ClickerGame)
