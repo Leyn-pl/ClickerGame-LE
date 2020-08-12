@@ -12,8 +12,8 @@ Me: _LEYN ~ Rias#1092
 Developer: FFirtes#0250
 # Links
 
-[Join My Discord](https://discord.gg/ftGX4rX)
+[Join my Discord](https://discord.gg/ftGX4rX)
 
-[Join Game Discord](https://discord.gg/pnBSeS2)
+[Join game Discord](https://discord.gg/pnBSeS2)
 
 [Medieval Clicker Game](https://github.com/FFirtes/ClickerGame)
