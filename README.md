@@ -2,7 +2,7 @@
 I edited Clicker Game by FFirtes
 
 For play, open "Index.html" file.
-You can use "Icon.ico" to make icon for tag
+You can use "Icon.ico" to make icon for shortcut
 
 __I will update code then i get stabile 6.0__
 
