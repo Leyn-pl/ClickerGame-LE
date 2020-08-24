@@ -9,7 +9,7 @@ You can use "Icon.ico" to make icon for shortcut
 **I drew the icon for my version. FFirtes can use it for the original.**
 
 # Discord
-Me: _LEYN ~ Rias#1092
+Me: _LEYN ~ Asia#1092
 
 Developer: FFirtes#0250
 # Links
