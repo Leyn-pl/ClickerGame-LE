@@ -6,6 +6,8 @@ You can use "Icon.ico" to make icon for shortcut
 
 ***I will update code then I get stabile 6.0***
 
+I drew the icon for my version. FFirtes can use it for the original.
+
 # Discord
 Me: _LEYN ~ Rias#1092
 
