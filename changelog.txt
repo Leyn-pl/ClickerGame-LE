@@ -1,4 +1,7 @@
-===== version 1.1  buld 2 =====
+===== version 1.2 build 1 =====
+ - New interface
+ - New dialogs
+===== version 1.1 build 2 =====
  - Fixed bug with automining
 ===== version 1.1 build 1 =====
  - Added info button
