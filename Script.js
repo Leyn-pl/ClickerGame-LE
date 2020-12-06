@@ -4,7 +4,7 @@ alert("Welcome to Clicker Game LEYN Edition! \n Original by FFirtes \n Remake by
 
 //vars
 
-var  stoneInf = 0
+var stoneInf = 0
 var stoneOp = 1
 var woodInf  = 0
 var woodOp = 1
