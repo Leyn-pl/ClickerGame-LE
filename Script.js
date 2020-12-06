@@ -1,6 +1,6 @@
 //greeting
 
-alert("Welcome to Medieval Clicker Game! \n Original by FFirtes \n Remake by _LEYN \nIn new version: \n New interface \n New dialogs");
+alert("Welcome to Clicker Game LEYN Edition! \n Original by FFirtes \n Remake by _LEYN \nIn new 1.2 version: \n New interface \n New dialogs");
 
 //vars
 
