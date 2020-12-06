@@ -1,220 +1,173 @@
-//starting alert
-alert("Clicker Game L.E. 1.1: \n -Fixed bug with automining")
-//resourses
-var stoneInt2 = 0
-var stoneInt = 0
-var stoneop = 1
-var woodInt = 0
-var woodInt2 = 0
-var woodop = 1
-var foodInt = 0
-var foodInt2 = 0
-var foodop = 1
-var monInt = 0
-var monInt2 = 0
-var monop = 1
-var popInt = 0
-var popInt2 = 0
-var popop = 1
-var domInt = 5
-var domInt2 = 5
-var domop = 1
-var resInt = 0
-var resInt2 = 0
-var resop = 1
-var minerInt = 0
-var minerInt2 = 0
-var woodcutterInt = 0
-var woodcutterInt2 = 0
-var farmerInt = 0
-var farmerInt2 = 0
-//adding resourses
-function stone() {
-  stoneInt2 = stoneInt + stoneop
-  stoneInt = stoneInt2;
-  document.getElementById("stone").innerHTML = ""+ stoneInt2 +"";
-}
-function wood() {
-  woodInt2 = woodInt + woodop
-  woodInt = woodInt2;
-  document.getElementById("wood").innerHTML = ""+ woodInt2 +"";
-}
-function food() {
-  foodInt2 = foodInt + foodop
-  foodInt = foodInt2;
-  document.getElementById("food").innerHTML = ""+ foodInt2 +"";
-}
+//greeting
+
+alert("Welcome to Medieval Clicker Game! \n Original by FFirtes \n Remake by _LEYN \nIn new version: \n New interface \n New dialogs");
+
+//vars
+
+var  stoneInf = 0
+var stoneOp = 1
+var woodInf  = 0
+var woodOp = 1
+var foodInf = 0
+var foodOp = 1
+var moneyInf = 0
+var populationInf = 0
+var dominionInf = 0
+var minerInf = 0
+var woodcutterInf = 0
+var farmerInf = 0
+
 //info
-function info() {
-  alert("About Game: \n This is Clicker Game L.E. \n This is Game created only with JS, HTML and CSS languages! \n -- \nDeveloper: FFirtes  \nProgrammers: TheSlaylord, i_xz_cto_i \nEdited by LEYN \n -- \nGame Discord: https://discord.gg/DcetVsa \nMy Discord: https://discord.gg/ftGX4rX \n -- \n (Game paused)");
+
+function stone() {
+	stoneInf = stoneInf + stoneOp
+  document.getElementById("stone").innerHTML = ""+ stoneInf +"";
 }
+
+function wood() {
+  woodInf = woodInf + woodOp
+  document.getElementById("wood").innerHTML = ""+ woodInf + "";
+}
+
+function food() {
+  foodInf = foodInf + foodOp
+  document.getElementById("food").innerHTML = ""+ foodInf +"";
+}
+
+function info() {
+  alert("About Game: \n | This is Clicker game | \n This is Game created only with JS, HTML and CSS languages! \n -- \nCreator: \n FFirtes \n -- \nProgrammers: \n FFirtes \n i_hz_cto_i \n The Slaylord \n firvut \n ---- \nGame discord: https://discord.gg/PfhAgmFAdp \nLEYN's discord: https://discord.gg/ftGX4rX \n ---- \n Remake by _LEYN");
+}
+
 //shop
+
 function SellStone() {
-  if (stoneInt2 >= 20) {
-    stoneInt2 = stoneInt - 20
-    stoneInt = stoneInt2
-    monInt2 = monInt + 1
-    monInt = monInt2
+  if (stoneInf >= 20) {
+    stoneInf = stoneInf - 20
+    moneyInf = moneyInf + 1
     alert("You sell 20 Stone for 1 Money!")
   } else {
     alert("You need 20 Stone for sell!")
   }
-  document.getElementById("stone").innerHTML = "" + stoneInt2 + "";
-  document.getElementById("money").innerHTML = "" + monInt2 + "";
+  document.getElementById("stone").innerHTML = "" + stoneInf + "";
+  document.getElementById("money").innerHTML = "" + moneyInf + "";
 }
+
 function SellWood() {
-  if (woodInt2 >= 30) {
-    woodInt2 = woodInt - 30
-    woodInt = woodInt2
-    monInt2 = monInt + 2
-    monInt = monInt2
+  if (woodInf >= 30) {
+    woodInf = woodInf - 30
+    moneyInf = moneyInf + 3
     alert("You sell 30 Wood for 2 Money!")
   } else {
     alert("You need 30 Wood for sell!")
   }
-  document.getElementById("wood").innerHTML = "" + woodInt2 + "";
-  document.getElementById("money").innerHTML = "" + monInt2 + "";
+  document.getElementById("wood").innerHTML = "" + woodInf + "";
+  document.getElementById("money").innerHTML = "" + moneyInf + "";
 }
+
 function SellFood() {
-  if (foodInt2 >= 50) {
-    foodInt2 = foodInt - 50
-    foodInt = foodInt2
-    monInt2 = monInt + 5
-    monInt = monInt2
-    alert("You sell 50 Food for 5 Money!")
+  if (foodInf >= 50) {
+    foodInf = foodInf - 50
+    moneyInf = moneyInf + 5
+    alert("You sell 50 Wood for 5 Money!")
   } else {
-    alert("You need 50 Food for sell!")
+    alert("You need 50 Wood for sell!")
   }
-  document.getElementById("food").innerHTML = "" + foodInt2 + "";
-  document.getElementById("money").innerHTML = "" + monInt2 + "";
+  document.getElementById("food").innerHTML = "" + foodInf + "";
+  document.getElementById("money").innerHTML = "" + moneyInf + "";
 }
-function build() {
-  if (stoneInt2 >= 30 && woodInt2 >= 20 && foodInt2 >= 75) {
-    stoneInt2 = stoneInt - 30
-    stoneInt = stoneInt2
-    woodInt2 = woodInt - 20
-    woodInt = woodInt2
-    foodInt2 = foodInt - 75
-    foodInt = foodInt2
-    popInt2 = popInt + 1
-    popInt = popInt2
-    alert("You built a house!")
+
+function Build(){
+	if(stoneInf >= 30 && woodInf >= 20 && foodInf >= 75){
+		stoneInf = stoneInf - 30
+		woodInf =woodInf - 20
+		foodInf = foodInf - 75
+		populationInf = populationInf + 2
+		alert("1 house gives you 2 willagers!")
   } else {
-    alert("You need 30 Stone, 20 Wood, 75 Food!")
+    alert("You need 30 Stone, 20 Wood, 70 Food!")
   }
-  document.getElementById("stone").innerHTML = "" + stoneInt2 + "";
-  document.getElementById("wood").innerHTML = "" + woodInt2 + "";
-  document.getElementById("food").innerHTML = "" + foodInt2 + "";
-  document.getElementById("pop").innerHTML = "" + popInt2 + "";
+  document.getElementById("stone").innerHTML = "" + stoneInf + "";
+  document.getElementById("wood").innerHTML = "" + woodInf + "";
+  document.getElementById("food").innerHTML = "" + foodInf + "";
+  document.getElementById("pop").innerHTML = "" + populationInf + "";
 }
-function Give() {
-  if (foodInt2 >= 50 && monInt2 >= 20) {
-    foodInt2 = foodInt - 50
-    foodInt = foodInt2
-    monInt2 = monInt - 5
-    monInt = monInt2
-    domInt2 = domInt + 5
-    domInt = domInt2
-    alert("You improve the Dominion!")
+
+function Improve() {
+  if (foodInf >= 50 && moneyInf >= 5) {
+    foodInf = foodInf- 50
+    moneyInf = moneyInf - 5
+    dominionInf = dominionInf + 5
+    alert("Dominion - final game score")
   } else {
     alert("You need 50 Food, 20 Money!")
   }
-  document.getElementById("food").innerHTML = "" + foodInt2 + "";
-  document.getElementById("money").innerHTML = "" + monInt2 + "";
-  document.getElementById("dom").innerHTML = "" + domInt2 + "";
+  document.getElementById("food").innerHTML = "" + foodInf + "";
+  document.getElementById("money").innerHTML = "" + moneyInf + "";
+  document.getElementById("dom").innerHTML = "" + dominionInf + "";
 }
-function Points() {
-	if(foodInt2 >= 100 && woodInt2 >= 40 && stoneInt2 >= 10 && domInt2 >= 1){
-		foodInt2 = foodInt - 100
-		foodInt = foodInt2
-		woodInt2 = woodInt - 40
-		woodInt = woodInt2
-		stoneInt2 = stoneInt - 10
-		stoneInt = stoneInt2
-		domInt2 = domInt - 1
-		domInt = domInt2
-		resInt2 = resInt + 3
-		resInt = resInt2
-       alert("You Research the world!");
-	}
-     else{
-		 alert("You need 10 Stone, 40 Wood, 100 Food, 1 Dominion for Research the world!")
-	 }
-  document.getElementById("stone").innerHTML = "" + stoneInt2 + "";
-  document.getElementById("wood").innerHTML = "" + woodInt2 + "";
-  document.getElementById("food").innerHTML = "" + foodInt2 + "";
-  document.getElementById("point").innerHTML = "" + resInt2 + "";
-}
-//auto mining
+
 function miner(){
-	if(popInt2 >= 1 &&  monInt2 >= 3){
-		popInt2 = popInt - 1
-		popInt = popInt2
-		monInt2 = monInt - 3
-		monInt = monInt2
-		minerInt2 = minerInt + 1
-		minerInt = minerInt2
-		alert("You buy Miner!")
+	if(populationInf >= 1 &&  moneyInf >= 3){
+		populationInf = populationInf - 1
+		moneyInf = moneyInf - 3
+		minerInf = minerInf + 1
+		alert("Miner gives 1 Stone every 3 seconds!")
 	}
 	else{
 		alert("You can't buy a Miner!")
 	}
-	  document.getElementById("money").innerHTML = "" + monInt2 + "";
-         document.getElementById("pop").innerHTML = "" + popInt2 + "";
+	  document.getElementById("money").innerHTML = "" + moneyInf + "";
+         document.getElementById("pop").innerHTML = "" + populationInf + "";
 }
-setInterval(stoneTime,1000) 
+
+setInterval(stoneTime,3000) 
 function stoneTime() {
-       if (minerInt2 > 0){
-              stoneInt2 = stoneInt + minerInt2
-		stoneInt = stoneInt2
+       if (minerInf > 0){
+            stoneInf = stoneInf + minerInf
        }
-          document.getElementById("stone").innerHTML = "" + stoneInt2 + "" ;
+          document.getElementById("stone").innerHTML = "" + stoneInf + "";
 }
+
 function woodcutter(){
-	if(popInt2 >= 1 &&  monInt2 >= 3){
-		popInt2 = popInt - 1
-		popInt = popInt2
-		monInt2 = monInt - 3
-		monInt = monInt2
-		woodcutterInt2 = woodcutterInt + 1
-		woodcutterInt = woodcutterInt2
-		alert("You buy Woodcutter!")
+	if(populationInf >= 1 &&  moneyInf >= 3){
+		populationInf = populationInf - 1
+		moneyInf = moneyInf - 4
+		woodcutterInf = woodcutterInf + 1
+		alert("Woodcutter gives 1 Wood every 3 seconds!")
 	}
 	else{
 		alert("You can't buy a Woodcutter!")
 	}
-	  document.getElementById("money").innerHTML = "" + monInt2 + "";
-         document.getElementById("pop").innerHTML = "" + popInt2 + "";
+	  document.getElementById("money").innerHTML = "" + moneyInf + "";
+         document.getElementById("pop").innerHTML = "" + populationInf + "";
 }
-setInterval(woodTime,1000) 
+
+setInterval(woodTime,3000) 
 function woodTime() {
-       if (woodcutterInt2 > 0){
-              woodInt2 = woodInt + woodcutterInt2
-	       woodInt = woodInt2
+       if (woodcutterInf > 0){
+            woodInf = woodInf + woodcutterInf
        }
-          document.getElementById("wood").innerHTML = "" + woodInt2 + "" ;
+          document.getElementById("wood").innerHTML = "" +woodInf + "";
 }
+
 function farmer(){
-	if(popInt2 >= 1 &&  monInt2 >= 3){
-		popInt2 = popInt - 1
-		popInt = popInt2
-		monInt2 = monInt - 3
-		monInt = monInt2
-		farmerInt2 = farmerInt + 1
-		farmerInt = farmerInt2
-		alert("You buy Farmer!")
+	if(populationInf >= 1 &&  moneyInf >= 3){
+		populationInf = populationInf - 1
+		moneyInf = moneyInf - 5
+		farmerInf = farmerInf + 1
+		alert("Farmer gives 1 Food every 3 seconds!")
 	}
 	else{
 		alert("You can't buy a Farmer!")
 	}
-	  document.getElementById("money").innerHTML = "" + monInt2 + "";
-         document.getElementById("pop").innerHTML = "" + popInt2 + "";
+	  document.getElementById("money").innerHTML = "" + moneyInf + "";
+         document.getElementById("pop").innerHTML = "" + populationInf + "";
 }
-setInterval(foodTime,1000) 
+
+setInterval(foodTime,3000) 
 function foodTime() {
-       if (farmerInt2 > 0){
-              foodInt2 = foodInt + farmerInt2
-	       foodInt = foodInt2
+       if (farmerInf > 0){
+            foodInf = foodInf + farmerInf
        }
-          document.getElementById("food").innerHTML = "" + foodInt2 + "" ;
+          document.getElementById("food").innerHTML = "" +foodInf + "";
 }
