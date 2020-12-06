@@ -77,7 +77,7 @@ function SellFood() {
 }
 
 function Build(){
-	if(stoneInf >= 30 && woodInf >= 20 && foodInf >= 75){
+	if(stoneInf >= 30 && woodInf >= 20 && foodInf >= 70){
 		stoneInf = stoneInf - 30
 		woodInf =woodInf - 20
 		foodInf = foodInf - 75
