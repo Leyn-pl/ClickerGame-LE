@@ -1,0 +1,119 @@
+h2 {
+    color: #00f7ff;
+    text-shadow: 2px 4px 6px;
+    padding: 10px;
+    border: 3px solid blue;
+    border-radius:10px;
+    margin-left:25%;
+    margin-right:25%;#00ccff
+}
+#Stone  {
+    color: #879ca1;
+    text-shadow: 2px 4px 6px;
+    padding: 10px;
+    border: 3px #879ca1;
+    border-radius:10px;
+    margin-left:25%;
+    margin-right:25%;#879ca1
+}
+#Wood  {
+    color: #532222;
+    text-shadow: 2px 4px 6px;
+    padding: 10px;
+    border: 3px #532222;
+    border-radius:10px;
+    margin-left:25%;
+    margin-right:25%;532222
+}
+#Food  {
+    color: #e2ab88;
+    text-shadow: 2px 4px 6px;
+    padding: 10px;
+    border: 3px #e2ab88;
+    border-radius:10px;
+    margin-left:25%;
+    margin-right:25%;#e2ab88
+}
+#Money  {
+    color: #e3ee21;
+    text-shadow: 2px 4px 6px;
+    padding: 10px;
+    border: 3px #e3ee21;
+    border-radius:10px;
+    margin-left:25%;
+    margin-right:25%;#e3ee21
+}
+#Pop  {
+    color: #34ab1b;
+    text-shadow: 2px 4px 6px;
+    padding: 10px;
+    border: 3px #34ab1b;
+    border-radius:10px;
+    margin-left:25%;
+    margin-right:25%;#34ab1b
+}
+#Dom  {
+    color: #f90000;
+    text-shadow: 2px 4px 6px;
+    padding: 10px;
+    border: 3px #f90000;
+    border-radius:10px;
+    margin-left:25%;
+    margin-right:25%;#f90000
+}
+#Point  {
+    color: #3f8c9f;
+    text-shadow: 2px 4px 6px;
+    padding: 10px;
+    border: 3px #3f8c9f;
+    border-radius:10px;
+    margin-left:25%;
+    margin-right:25%;#3f8c9f
+}
+#Shop{
+  text-shadow: 2px 4px 6px;
+}
+h1{
+  color: #ece580;
+  text-shadow: 2px 4px 6px;
+}
+html {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+input {
+    text-align: center;
+    font-size: 23pt;
+    background-color: #999999;
+    color: #336666;
+    border-radius: 9px;
+}
+h4 {
+    color: #ccffcc;
+    text-align: center;
+}
+input :hover{
+  
+    font-size:300pt;
+}
+button {
+    border:1px black;
+    border-radius: 7px;
+    box-shadow: 0 0 5px, inset 0 0 25px;
+    padding: 10px 40px;
+    background-color: black;
+    font-weight: bold;
+    outline-style: none;
+}
+h3 {
+    color: #32b1d9;
+}
+a {
+  color: #1e2463;
+}
