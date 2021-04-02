@@ -1,37 +1,149 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Medieval Clicker Game</title>
+        <title>Clicker Game LE</title>
            <script src="Script.js"></script>
-            <link rel="stylesheet" href="Style-clicker.css">
-            <audio src="ost.mp3" autoplay="autoplay"></audio>
+            <link rel="stylesheet" href="Style.css">
+<audio src="ost.mp3" autoplay="autoplay"></audio>
    </head>
     <body>
             <i>
-		<table>
-              <tr><td onClick="Game()"><font color="red"><p>Clicker Game LE version 1.2</font></p></td></tr>
-		</table>
-		<table>
-		<tr><td class="i" data-title="Resources"><p class="info">Resources:</p></td><td></td><td></td><td></td><td></td><td class="i" data-title="Shop"><p class="info">Shop:</p></td><td></td><td class="i" data-title="Info"><img src="info.png" height="50px" width="50px" onClick="info()"></td></tr>
-		<tr><td bgcolor="grey" class="i" data-title="Stone"><img src="stone.png" height="20px" width="20px"><font color="#bdc3c7">  Stone:</font><li id="stone">0</li></td><td class="i" data-title="+1 Stone"><input type="button"  id="stoneButton" onmousedown="stone()" value="Get Stone"></td>  <td></td><td></td><td></td>  <form align="right"><td bgcolor="grey" class="i" data-title="Sell Stone">Sell Stone</td><td bgcolor="orange" class="i" data-title="-20 Stone | +1 Money">20 Stone = 1 Money</bgcolor></td><td class="i" data-title="+1 Money"><input type="button" class="shopButtons" onClick="SellStone()" value="Sell"></td>
-		</form></tr>
-		<tr><td bgcolor="#873500" class="i" data-title="Wood"><img src="wood.png" height="20px" width="20px"><font color="#dc7633">  Wood:</font><li id="wood">0</li></td><td class="i" data-title="+1 Wood"><input type="button" id="woodButton" onmousedown="wood()" value="Get Wood"></td>  <td></td><td></td><td></td>  <form align="right"><td bgcolor="#873500" class="i" data-title="Sell Wood">Sell Wood</td><td bgcolor="orange" class="i" data-title="-30 Wood | +2 Money">30 Wood = 2 Money</bgcolor></td><td class="i" data-title="+2 Money"><input type="button" class="shopButtons" onClick="SellWood()" value="Sell"></td>
-		</form></tr>
-		<tr><td bgcolor="#e59866" class="i" data-title="Food"><img src="food.png" height="20px" width="20px"><font color="#edbb99">  Food:</font><li id="food">0</li></td><td class="i" data-title="+1 Food"><input type="button" id="foodButton" onmousedown="food()" value="Get Food"></td>  <td></td><td></td><td></td>  <form align="right"><td bgcolor="#e59866" class="i" data-title="Sell Food">Sell Food</td><td bgcolor="orange" class="i" data-title="-50 Food | +5 Money">50 Food = 5 Money</bgcolor></td><td class="i" data-title="+5 Money"><input type="button" class="shopButtons" onClick="SellFood()" value="Sell"></td>
-		</form></tr>
-		<tr><td bgcolor="#fbb917" class="i" data-title="Money"><img src="money.png" height="20px" width="20px"><font color="#ffdb58">  Money:</font><li id="money">0</li>  <td></td><td></td><td></td><td></td>  <form align="right"><td bgcolor="#d1doce"  class="i" data-title="Buy Miner">Buy Miner</td><td bgcolor="orange" class="i" data-title="-1 People -3 Money | +1 Miner(+1 Stone/3 seconds)">1 People 3 Money = 1 Miner</bgcolor></td><td class="i" data-title="+1 Miner"><input type="button" class="shopButtons" onClick="miner()" value="Buy"></td>
-		</form></tr>
-		<tr><td bgcolor="#41a317" class="i" data-title="Population"><img src="people.png" height="20px" width="20px"><font color="#52d017">  Population:</font><li id="pop">0</li>  <td></td><td></td><td></td><td></td>  <form align="right"><td bgcolor="#d1doce" class="i" data-title="Buy Woodcutter">Buy Woodcutter</td><td bgcolor="orange" class="i" data-title="-1 People -4 Money | +1 Woodcutter(+1 Wood/3 seconds)">1 People 4 Money = 1 Woodcutter</bgcolor></td><td class="i" data-title="+1 Woodcutter"><input type="button" class="shopButtons" onClick="woodcutter()" value="Buy"></td>
-		</form></tr>
-		<tr><td bgcolor="#9f000f" class="i" data-title="Dominion"><img src="dominion.png" height="20px" width="20px"><font color="#dc381f">  Dominion:</font><li id="dom">0</li>  <td></td><td></td><td></td><td></td>  <form align="right"><td bgcolor="#d1doce" class="i" data-title="Buy Farmer">Buy Farmer</td><td bgcolor="orange" class="i" data-title="-1 People -5 Money | +1 Farmer(+1 Food/3 seconds)">1 People 5 Money = 1 Farmer</bgcolor></td><td class="i" data-title="+1 Farmer"><input type="button" class="shopButtons" onClick="farmer()" value="Buy"></td>
-		</form></tr>
-		<tr><td></td>  <td></td><td></td><td></td><td></td>  <form align="right"><td bgcolor="#6f4e37" class="i" data-title="Build House">Build House</td><td bgcolor="orange" class="i" data-title="-30 Stone -20 Wood -70 Food | +2 People">30 Stone  20 Wood  70 Food = 2 People</bgcolor></td><td class="i" data-title="+2 People"><input type="button" class="shopButtons" onClick="Build()" value="Build"></td>
-		</form></tr>
-		<tr><td></td>  <td></td><td></td><td></td><td></td>  <form align="right"><td bgcolor="#9f000f" class="i" data-title="Improve the Dominion">Improve the Dominion</td><td bgcolor="orange" class="i" data-title="-50 Food -5 Money | +5 Dominion">50 Food 5 Money = 5 Dominion</bgcolor></td><td class="i" data-title="+5 Dominion"><input type="button" class="shopButtons" onClick="Improve()" value="Improve"></td>
-		</form></tr>
-		<tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-		<tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>  </tr>
-		<tr>  <td></td><td></td><td></td><td></td><td></td><td></td><td></td><td><form align="right"><a href="https://discord.gg/r6ZFjga" class="i" data-title="Discord"><img src="Discord.png" height="50" width="50"></a></form></td>  </tr>
-		</table>
-        </body>
+              <font color="red"><p onClick="Game()">Clicker Game LEYN Edition 1.2</font></p>
+        <form align="right">
+		  <img src="info.png" height="75px" width="75px" onmousedown="info()">
+		  </form>
+			<form  align="center">
+        <h2 id="Stone">Stone</h2>
+        <h1 id="stone">0</h1>
+        <input type="button" onmousedown="stone()" value="Get Stone">
+        <br>
+        <br>
+        </form>
+           <form  align="center">
+        <h2 id="Wood">Wood</h2>
+        <h1 id="wood">0</h1>
+        <input type="button" onmousedown="wood()" value="Get Wood">
+        <br>
+        <br>
+        </form>
+           <form  align="center">
+        <h2 id="Food">Food</h2>
+        <h1 id="food">0</h1>
+        <input type="button" onmousedown="food()" value="Get Food">
+        <br>
+        <br>
+        </form>
+    
+            
+<form align="center">
+ <h2 id="Money">Money</h2>
+  <h1 id="money">0</h1>
+   <br>
+   <br>
+  </form>
+  
+<form align="center">
+ <h2 id="Pop">Population</h2>
+  <h1 id="pop">0</h1>
+  <br><br>
+  </form>
+  
+ 
+ <form align="center">
+     <h2 id="Dom">Dominion</h2>
+     <h1 id="dom">5</h1>
+     <br><br>
+     </form>
+     
+      <form align="center">
+     <h2 id="Point">Points of research</h2>
+     <h1 id="point">0</h1>
+     <br><br>
+     </form>
+   
+   <hr
+   font color = yellow
+   >
+   <hr
+   font color = yellow
+   >
+   
+ 
+<h1 align = center id="Shop"><i><font color = orange>SHOP</font></i></h1>
+      <form  align="center">
+        <h2>Sell Stone</h2>
+        <h3>50 Stone = 1 Money</h3>
+        <input type="button" onClick="SellStone()" value="Sell Stone">
+        </form>
+        <hr font color = purple>
+
+              <form  align="center">
+        <h2>Sell Wood</h2>
+        <h3>75 Wood = 2 Money</h3>
+        <input type="button" onClick="SellWood()" value="Sell Wood">
+        </form>
+        <hr font color = purple>
+        
+              <form  align="center">
+        <h2>Sell Food</h2>
+        <h3>100 Food = 3 Money</h3>
+        <input type="button" onClick="SellFood()" value="Sell Food">
+        </form>
+        <hr font color = purple>
+        
+
+       <form  align="center">
+        <h2>Buy Miner</h2>
+        <h3>1 people, 3 money = 1 Miner</h3>
+        <input type="button" onClick="miner()" value="Buy Miner">
+        </form>
+        <hr font color = purple>
+		
+		<form  align="center">
+        <h2>Buy Woodcutter</h2>
+        <h3>1 people, 3 money = 1 Woodcutter</h3>
+        <input type="button" onClick="woodcutter()" value="Buy Woodcutter">
+        </form>
+        <hr font color = purple>
+	   
+	   <form  align="center">
+        <h2>Buy Farmer</h2>
+        <h3>1 people, 3 money = 1 Farmer</h3>
+        <input type="button" onClick="farmer()" value="Buy Farmer">
+        </form>
+        <hr font color = purple>
+	   
+  <form align="center">
+  <h2> Create People </h2>
+
+  <h3> 30 Wood, 50 Stone, 100 Food = 1 People </h3>
+  <input type="button" onClick="build()" value="Build">
+  </form>
+  
+   <hr font color = purple>
+ 
+     <form align="center">
+  <h2> Improve the Dominion </h2>
+  <h3>150 Food and 5 Money = 5 Dominion</h3>
+  <input type="button" onClick="Give()" value="Improve">
+  </form>
+          <hr font color = purple>
+  
+        <form  align="center">
+        <h2>Research the world</h2>
+        <h3>200 Food, 70 Wood, 25 Stone, 1 People = 1 Point of research</h3>
+        <input type="button" onClick="Points()" value="Research">
+        </form>
+
+   
+   <hr
+   font color = yellow
+   >
+   <hr
+   font color = yellow
+   >
+   </i>
+   <form align="right">
+   <a href="https://discord.gg/ftGX4rX"><img src="Discord.png" height="50" width="50"></a></form>
+   </body>
    </html>
