@@ -139,7 +139,7 @@ function Points() {
   document.getElementById("point").innerHTML = "" + resInt2 + "";
 }
 //dominion
-setInterval(domTime,300000)
+setInterval(domTime,180000)
 function domTime(){
             domInt2 = domInt - 1
             domInt = domInt2
