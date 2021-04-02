@@ -93,7 +93,7 @@ function build() {
     popInt = popInt2
     alert("You built a house!")
   } else {
-    alert("You need 55 Stone, 30 Wood, 125 Food!")
+    alert("You need 50 Stone, 30 Wood, 100 Food!")
   }
   document.getElementById("stone").innerHTML = "" + stoneInt2 + "";
   document.getElementById("wood").innerHTML = "" + woodInt2 + "";
