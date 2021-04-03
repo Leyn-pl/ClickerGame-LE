@@ -17,4 +17,4 @@ Developer: FFirtes#0250
 
 [Original game](https://github.com/FFirtes/ClickerGame)
 
-[Funny image](https://media.discordapp.net/attachments/752101321825452032/785202402298429460/nc9tW9Zc5I9xysy2.png?width=560&height=560)
+[Do not click](https://media.discordapp.net/attachments/752101321825452032/785202402298429460/nc9tW9Zc5I9xysy2.png?width=560&height=560)
